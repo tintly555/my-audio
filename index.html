@@ -1,23 +1,44 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play audio online</title>
+    <title>History Assignment Audio Gallery</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding-top: 50px; background: #f5f5f7; }
-        .player-container { background: white; padding: 30px; border-radius: 12px; display: inline-block; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-        audio { margin-top: 15px; width: 300px; }
+        body { font-family: sans-serif; text-align: center; padding: 40px 20px; background: #f5f5f7; }
+        .player-container { background: white; padding: 30px; border-radius: 12px; display: inline-block; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 400px; width: 100%; }
+        .audio-item { margin-bottom: 25px; padding-bottom: 15px; border-bottom: 1px dashed #ddd; }
+        .audio-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+        h2 { color: #333; margin-bottom: 20px; font-size: 22px; }
+        h3 { color: #555; margin-bottom: 5px; font-size: 16px; text-align: left; }
+        audio { margin-top: 10px; width: 100%; }
+        p { font-size: 12px; color: #888; text-align: left; margin: 0; }
     </style>
 </head>
 <body>
     <div class="player-container">
-        <h2>My Audio Shares</h2>
-        <!-- 这里的 music.m4a 要改成你上传的音频文件名 -->
-        <audio controls>
-            <source src="es.m4a" type="audio/mp4">
-            Your browser does not support audio playback.。
-        </audio>
+        <h2>History Assignment</h2>
+        
+        <!-- First Audio -->
+        <div class="audio-item">
+            <h3>Part 1</h3>
+            <p>File: es.m4a</p>
+            <audio controls>
+                <source src="es.m4a" type="audio/mp4">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <!-- Second Audio -->
+        <div class="audio-item">
+            <h3>Part 2</h3>
+            <p>File: es2.m4a</p>
+            <audio controls>
+                <source src="es2.m4a" type="audio/mp4">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        
     </div>
 </body>
 </html>
